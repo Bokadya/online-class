@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bokadya/online-class"
+    "url": "git+https://github.com/miroslavpejic85/mirotalk"
   },
   "author": "Bokadya",
   "license": "ISC",
-  "homepage": "https://github.com/Bokadya/online-class",
+  "homepage": "https://github.com/miroslavpejic85/mirotalk",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
