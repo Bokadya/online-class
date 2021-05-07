@@ -2145,36 +2145,7 @@ function emitVAStatus(element, status) {
     status: status,
   });
 }
-
-/**
- * About info
- * https://sweetalert2.github.io
- */
-
-// function getAbout() {
-//   playSound("newMessage");
-
-//   Swal.fire({
-//     background: swalBackground,
-//     position: "center",
-//     title: "<strong>WebRTC Made with ❤️</strong>",
-//     imageAlt: "mirotalk-about",
-//     imageUrl: aboutImg,
-//     html: `
-//     <br/>
-//     <div id="about"><b>open source</b> project on<a href="https://github.com/miroslavpejic85/mirotalk" target="_blank"><h1><strong> GitHub </strong></h1></a></div>
-//     <div id="author"><a href="https://www.linkedin.com/in/miroslav-pejic-976a07101/" target="_blank">Author: Miroslav Pejic</a></div>
-//     `,
-//     showClass: {
-//       popup: "animate__animated animate__fadeInDown",
-//     },
-//     hideClass: {
-//       popup: "animate__animated animate__fadeOutUp",
-//     },
-//   });
-// }
-
-/**
+/*
  * Leave the Room and create a new one
  * https://sweetalert2.github.io
  */

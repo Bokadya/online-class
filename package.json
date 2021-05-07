@@ -1,5 +1,5 @@
 {
-  "name": "IIITdmj",
+  "name": "Bokadya",
   "version": "1.0.0",
   "description": "A free WebRTC browser-based video call",
   "main": "server.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miroslavpejic85/mirotalk"
+    "url": "git+https://github.com/Bokadya/online-class"
   },
-  "author": "IIITdmj",
+  "author": "Bokadya",
   "license": "ISC",
-  "homepage": "https://github.com/miroslavpejic85/mirotalk",
+  "homepage": "https://github.com/Bokadya/online-class",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
