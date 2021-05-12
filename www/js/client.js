@@ -290,7 +290,7 @@ function initPeer() {
   /**
    * set your name 4 conference
    */
-  function whoAreYou() {
+   function whoAreYou() {
     playSound("newMessage");
 
     Swal.fire({
@@ -299,22 +299,107 @@ function initPeer() {
       position: "center",
       imageAlt: "mirotalk-name",
       imageUrl: welcomeImg,
-      title: "Enter your name",
-      input: "text",
+      title: 'Login Form',
+
+      html: `<input type="text" id="login" class="swal2-input" placeholder="Username">
+            <input type="password" id="password" class="swal2-input" placeholder="Password">`,
+      confirmButtonText: 'Sign in',
+
       showClass: {
         popup: "animate__animated animate__fadeInDown",
       },
       hideClass: {
         popup: "animate__animated animate__fadeOutUp",
       },
-      inputValidator: (value) => {
-        if (!value) {
-          return "Please enter youre name";
+      
+      focusConfirm: false,
+      preConfirm: () => {
+        const login = Swal.getPopup().querySelector('#login').value
+        const password = Swal.getPopup().querySelector('#password').value
+        
+        if (login=='2018001@iiitdmj.ac.in' && password=='2018001') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
         }
-        myPeerName = value;
-        myVideoParagraph.innerHTML = myPeerName;
-        joinToChannel();
+        else if (login=='2018002@iiitdmj.ac.in' && password=='2018002') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018003@iiitdmj.ac.in' && password=='2018003') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018004@iiitdmj.ac.in' && password=='2018004') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018005@iiitdmj.ac.in' && password=='2018005') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018006@iiitdmj.ac.in' && password=='2018006') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018007@iiitdmj.ac.in' && password=='2018007') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018008@iiitdmj.ac.in' && password=='2018008') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018009@iiitdmj.ac.in' && password=='2018009') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018010@iiitdmj.ac.in' && password=='2018010') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018187@iiitdmj.ac.in' && password=='2018187') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018228@iiitdmj.ac.in' && password=='2018228') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018185@iiitdmj.ac.in' && password=='2018185') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (login=='2018250@iiitdmj.ac.in' && password=='2018250') {
+          myPeerName = login;
+          myVideoParagraph.innerHTML = myPeerName;
+          joinToChannel();
+        }
+        else if (!login || !password) {
+          Swal.showValidationMessage(`Please enter login and password`)
+         
+        }
+        else{
+          Swal.showValidationMessage(`Please enter login and password`)
+        }
+
+          
+        
       },
+
+
     }).then(function () {
       welcomeUser();
     });
